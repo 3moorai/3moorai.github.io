@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -30,8 +30,7 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "فشل تسجيل الدخول");
       }
 
-      router.push("/admin");
-      router.refresh();
+      window.location.href = "/admin";
     } catch (err: any) {
       setError(err.message || "حدث خطأ غير متوقع");
     } finally {

@@ -1,4 +1,4 @@
-﻿import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
@@ -25,7 +25,9 @@ export async function signAuthToken(payload: { id: string; username: string }): 
 
 export async function verifyAuthToken(token: string): Promise<{ id: string; username: string } | null> {
   try {
-    const { payload } = await jwtVerify(token, SECRET_KEY);
+    const { payload } = await jwtVerify(token, SECRET_KEY, {
+      clockTolerance: 60,
+    });
     return {
       id: payload.id as string,
       username: payload.username as string,
