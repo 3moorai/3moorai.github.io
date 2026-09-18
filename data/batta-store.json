@@ -1,0 +1,118 @@
+{
+  "admin": {
+    "id": "admin-1",
+    "username": "omar",
+    "passwordHash": "$2a$10$hiPCrdDg9a7T9gBqL1SKE.1W/DYQRQYTpoKnGEx3r//GUA.FALLlO",
+    "createdAt": "2026-09-18T22:17:58.859Z"
+  },
+  "projects": [
+    {
+      "title": "fileshare",
+      "slug": "fileshare",
+      "description": "يمكنك نقل اي ملف بين اي جهاز لأخر بدون اي سلوك",
+      "fullDescription": "يمكنك نقل اي ملف بين اي جهاز لأخر بدون اي سلوك",
+      "category": "web",
+      "technologies": [
+        "Ttpescript"
+      ],
+      "previewType": "iframe",
+      "screenshotUrl": "",
+      "liveUrl": "https://3moorai.github.io/quickdrop/",
+      "githubUrl": "https://github.com/omarmhmdfwzi22-hacker/quickdrop",
+      "status": "PUBLISHED",
+      "isFeatured": true,
+      "sortOrder": 1,
+      "id": "proj-1789771022526-2nx3",
+      "createdAt": "2026-09-18T22:37:02.526Z",
+      "updatedAt": "2026-09-18T22:37:02.526Z"
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk-1",
+      "name": "HTML5 & Modern CSS",
+      "category": "frontend",
+      "proficiency": 95,
+      "sortOrder": 1,
+      "description": "تصميم واجهات حديثة ومتجاوبة"
+    },
+    {
+      "id": "sk-2",
+      "name": "JavaScript & TypeScript",
+      "category": "frontend",
+      "proficiency": 90,
+      "sortOrder": 2,
+      "description": "كتابة كود متين وسريع"
+    },
+    {
+      "id": "sk-3",
+      "name": "React & Next.js",
+      "category": "frontend",
+      "proficiency": 92,
+      "sortOrder": 3,
+      "description": "بناء تطبيقات ويب متقدمة بالـ App Router"
+    },
+    {
+      "id": "sk-4",
+      "name": "Tailwind CSS & Glassmorphism",
+      "category": "frontend",
+      "proficiency": 95,
+      "sortOrder": 4,
+      "description": "تصاميم داكنة وعصرية بلمسات احترافية"
+    },
+    {
+      "id": "sk-5",
+      "name": "Python",
+      "category": "backend",
+      "proficiency": 88,
+      "sortOrder": 5,
+      "description": "معالجة البيانات والبرمجة النصية والذكاء الاصطناعي"
+    },
+    {
+      "id": "sk-6",
+      "name": "Node.js & REST APIs",
+      "category": "backend",
+      "proficiency": 87,
+      "sortOrder": 6,
+      "description": "بناء واجهات برمجية آمنة وسريعة"
+    },
+    {
+      "id": "sk-7",
+      "name": "Git & Version Control",
+      "category": "tools",
+      "proficiency": 90,
+      "sortOrder": 7,
+      "description": "إدارة الإصدارات والتعاون البرمجي"
+    },
+    {
+      "id": "sk-8",
+      "name": "AI Integration & APIs",
+      "category": "ai",
+      "proficiency": 89,
+      "sortOrder": 8,
+      "description": "دمج نماذج الذكاء الاصطناعي المتقدمة"
+    }
+  ],
+  "settings": {
+    "siteName": "بطة",
+    "logoUrl": "/batta-logo.png",
+    "heroBadge": "👋 أهلاً بيك في بطة",
+    "heroTitle": "أنا عمر",
+    "heroSubtitle": "Developer & Creator — ببني أفكار تتحول لمشاريع حقيقية",
+    "facebookUrl": "https://www.facebook.com/omar.mhmdfwzi",
+    "email": "",
+    "githubUrl": "",
+    "twitterUrl": "",
+    "linkedinUrl": "",
+    "aboutWho": "أنا عمر فوزي، مطور برمجيات ومبتكر رقمي شغوف ببناء وتطوير تطبيقات ويب حديثة وأنظمة رقمية تحل مشاكل حقيقية وتقدم تجربة استخدام استثنائية.",
+    "aboutLearning": "أركز دائمًا على تعلم أحدث تقنيات الويب، معمارية السيرفرات السحابية، ودمج الذكاء الاصطناعي في التطبيقات اليومية.",
+    "aboutBuilding": "أبني منصات متكاملة (Full-Stack) تجمع بين الأداء الفائق والسرعة والتصميم العصري المتقن.",
+    "aboutInterests": "هندسة البرمجيات، تصميم الواجهات الزجاجية والمستقبلية (Glassmorphism)، تقنيات الويب السريع، ومشاريع الذكاء الاصطناعي.",
+    "aboutGoal": "تحويل الأفكار الطموحة إلى مشاريع حقيقية تلهم الناس وتضيف قيمة عملية ملموسة.",
+    "footerText": "© 2026 Omar Fawzi. All rights reserved.",
+    "seoTitle": "بطة | عمر فوزي — Developer Portfolio & Projects",
+    "seoDescription": "الموقع والبورتفوليو الرسمي للمطور عمر فوزي (بطة) — استعراض المشاريع البرمجية والمهارات والتطبيقات الحديثة.",
+    "ogImage": "/batta-logo.png"
+  },
+  "messages": []
+}

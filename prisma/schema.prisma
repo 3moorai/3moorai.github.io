@@ -1,0 +1,73 @@
+﻿generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProjectStatus {
+  PUBLISHED
+  DRAFT
+  ARCHIVED
+}
+
+enum PreviewType {
+  iframe
+  screenshot
+}
+
+model Admin {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model Project {
+  id              String        @id @default(uuid())
+  title           String
+  slug            String        @unique
+  description     String
+  fullDescription String
+  category        String
+  technologies    String[]
+  previewType     PreviewType   @default(iframe)
+  screenshotUrl   String?
+  liveUrl         String?
+  githubUrl       String?
+  status          ProjectStatus @default(PUBLISHED)
+  isFeatured      Boolean       @default(false)
+  sortOrder       Int           @default(0)
+  seoTitle        String?
+  seoDescription  String?
+  ogImage         String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+}
+
+model Skill {
+  id          String   @id @default(uuid())
+  name        String
+  category    String
+  proficiency Int      @default(90)
+  icon        String?
+  description String?
+  sortOrder   Int      @default(0)
+}
+
+model SiteSetting {
+  id    String @id @default(uuid())
+  key   String @unique
+  value String
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

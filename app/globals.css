@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 5 5 5;
+    --surface: 10 10 10;
+    --yellow: 255 212 0;
+  }
+
+  * {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body {
+    background-color: #050505;
+    color: #FFFFFF;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Custom Modern Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #070707;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFD400;
+  }
+}
+
+/* ========================================================
+   WORLD-CLASS CLEAN LIGHT THEME (Apple / Vercel Aesthetic)
+======================================================== */
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #F8F9FA !important;
+  color: #09090B !important;
+}
+
+html.light * {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Light Mode Scrollbar */
+html.light ::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Typography Overrides in Light Mode */
+html.light .text-white {
+  color: #09090B !important;
+}
+
+html.light .text-zinc-100,
+html.light .text-zinc-200,
+html.light .text-zinc-300 {
+  color: #334155 !important;
+}
+
+html.light .text-zinc-400 {
+  color: #64748B !important;
+}
+
+html.light .text-zinc-500 {
+  color: #94A3B8 !important;
+}
+
+html.light .text-batta-yellow {
+  color: #D97706 !important; /* Rich amber for high contrast & elegance */
+}
+
+/* Glass Panels & Cards in Light Mode */
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06);
+}
+
+html.light .glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.85) 100%) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.light .glass-card:hover {
+  border-color: rgba(217, 119, 6, 0.45) !important;
+  box-shadow: 0 16px 36px -6px rgba(217, 119, 6, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+html.light .glass-card-static {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.85) 100%) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Background Replacements in Light Mode */
+html.light .bg-zinc-950,
+html.light .bg-zinc-900,
+html.light .bg-black {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-zinc-950\/80,
+html.light .bg-zinc-950\/60,
+html.light .bg-zinc-950\/40,
+html.light .bg-zinc-900\/80,
+html.light .bg-zinc-900\/70,
+html.light .bg-zinc-900\/50 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html.light .bg-gradient-to-b.from-zinc-900\/70 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95), #FFFFFF) !important;
+}
+
+html.light .bg-white\/\[0\.05\],
+html.light .bg-white\/\[0\.04\],
+html.light .bg-white\/\[0\.03\],
+html.light .bg-white\/\[0\.02\],
+html.light .bg-white\/5,
+html.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.035) !important;
+}
+
+html.light .hover\:bg-white\/\[0\.08\]:hover,
+html.light .hover\:bg-white\/\[0\.1\]:hover,
+html.light .hover\:bg-white\/10:hover,
+html.light .hover\:bg-white\/5:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20,
+html.light .border-white\/\[0\.08\],
+html.light .border-white\/\[0\.07\],
+html.light .border-white\/\[0\.06\],
+html.light .border-white\/\[0\.05\],
+html.light .border-white\/\[0\.04\] {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Light Mode Input Elements */
+html.light input,
+html.light textarea,
+html.light select {
+  background-color: #FFFFFF !important;
+  color: #09090B !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+html.light input:focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #D97706 !important;
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.2) !important;
+}
+
+/* Primary Yellow Button Retains Dark Text */
+html.light .bg-batta-yellow {
+  background-color: #FFD400 !important;
+  color: #09090B !important;
+}
+
+html.light .bg-batta-yellow * {
+  color: #09090B !important;
+}
+
+/* Golden Accent Glows in Light Mode */
+html.light .bg-batta-yellow\/10,
+html.light .bg-batta-yellow\/15,
+html.light .bg-batta-yellow\/20 {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+}
+
+html.light .border-batta-yellow\/20,
+html.light .border-batta-yellow\/30,
+html.light .border-batta-yellow\/40,
+html.light .border-batta-yellow\/50 {
+  border-color: rgba(217, 119, 6, 0.35) !important;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.85) 0%, rgba(10, 10, 10, 0.7) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(255, 212, 0, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px -8px rgba(255, 212, 0, 0.15), 0 4px 16px rgba(0, 0, 0, 0.6);
+  }
+
+  .glass-card-static {
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.85) 0%, rgba(10, 10, 10, 0.7) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .yellow-glow {
+    box-shadow: 0 0 25px rgba(255, 212, 0, 0.25);
+  }
+
+  .yellow-glow-subtle {
+    box-shadow: 0 0 15px rgba(255, 212, 0, 0.12);
+  }
+}
