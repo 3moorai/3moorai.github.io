@@ -25,6 +25,12 @@ export default function AdminLoginPage() {
         body: JSON.stringify({ username, password }),
       });
 
+      if (res.status === 404 || res.status === 405) {
+        throw new Error(
+          "أنت تتصفح النسخة الثابتة على GitHub Pages. لوحة التحكم تتطلب تشغيل السيرفر المحلي على http://localhost:3000/admin"
+        );
+      }
+
       const data = await res.json();
       if (!res.ok) {
         throw new Error(data.error || "فشل تسجيل الدخول");

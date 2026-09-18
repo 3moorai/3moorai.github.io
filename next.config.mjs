@@ -2,7 +2,7 @@ const isExport = process.env.NEXT_EXPORT === 'true';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  ...(isExport ? { output: 'export' } : {}),
+  ...(isExport ? { output: 'export', trailingSlash: true } : {}),
   reactStrictMode: true,
   images: {
     unoptimized: true,

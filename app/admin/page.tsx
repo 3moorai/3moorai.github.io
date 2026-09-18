@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import {
@@ -14,8 +14,6 @@ import {
 import { getAuthSession } from "@/lib/auth";
 import { getDashboardStats, getProjects } from "@/lib/db";
 import { StatusBadge, CategoryBadge } from "@/components/ui/Badge";
-
-export const revalidate = 0;
 
 export default async function AdminOverviewPage() {
   const session = await getAuthSession();

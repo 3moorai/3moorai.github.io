@@ -38,6 +38,9 @@ export async function verifyAuthToken(token: string): Promise<{ id: string; user
 }
 
 export async function getAuthSession(): Promise<{ id: string; username: string } | null> {
+  if (process.env.NEXT_EXPORT === "true") {
+    return null;
+  }
   try {
     const cookieStore = cookies();
     const token = cookieStore.get(COOKIE_NAME)?.value;
